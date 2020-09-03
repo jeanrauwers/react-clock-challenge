@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const TheClock = () => {
+  return (
+    <React.Fragment>
+      <div>00:00:00</div>
+      <button>Start</button>
+      <button>Stop</button>
+    </React.Fragment>
+  );
+}
+
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TheClock />
     </div>
   );
 }
